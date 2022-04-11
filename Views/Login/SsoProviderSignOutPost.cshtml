@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Signed out of account";
+}
+
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Signed out of account</title>
+    <link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body style="padding: 50px">
+
+    <h3><strong>@ViewData["ErrorMessage"]</strong></h3>
+    <h3><strong>@TempData["ErrorMessage"]</strong></h3>
+    <h3><strong>@ViewData["Message"]</strong></h3>
+    <h2><strong>@TempData["Message"]</strong></h2>
+
+</body>
+</html>
+
+
