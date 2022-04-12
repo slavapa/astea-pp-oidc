@@ -85,7 +85,10 @@ namespace AsteaAlliance.UI.CustomersPortal.Controllers
             }
             ViewBag.RouteValues = redirectUriRouteValues;
 
-            //SsoProviderSignOut();
+            if (ViewBag.DebugeMode)
+            {
+                SsoProviderSignOut();
+            }
 
             return View();
         }
